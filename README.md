@@ -65,10 +65,13 @@
   - As we can see in the above picture there are outliers and using upper limit and lower limit we got to know about the total number of the outliers and each column which was **825, 941, 898, 2324** respectively.
   - Removing all this outliers would not be a good option we could lose so many important information so we thought of using **log transformation**.<br>
   <br>
-  ![alt text](image.png)<br>
+ <img width="500" alt="image" src="https://github.com/user-attachments/assets/f5194f9b-35d6-40bc-b52d-9f606db97526">
+<br>
   - The above histogram shows the distribution of data **before** applying the log transformation.<br>
   <br>
-  ![alt text](image-1.png)<br>
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/da50fb92-7e46-40db-8ff3-cc0147efc188">
+
+  <br>
   
   - **After** applying the log transformation, it **ractifies the skewness** in data distribution.
 
