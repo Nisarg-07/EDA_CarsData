@@ -54,13 +54,85 @@
  
   **5 Market Category**
   - We dropped this column for the smooth flow.
-
+>
   ## Outlier detection and handling
   - We used boxplot to plot the outliers and Engine_hp, highway MPG, city MPG, and MSRP columns.<br>
-  <img width="192" alt="image" src="https://github.com/user-attachments/assets/2e077ade-52c1-4acf-93a7-246dec847645"> <img width="192" alt="image" src="https://github.com/user-attachments/assets/2d150a59-25b2-4620-af7d-10f58e7eba67"> <br>
+  <img width="190" alt="image" src="https://github.com/user-attachments/assets/2e077ade-52c1-4acf-93a7-246dec847645"> <img width="190" alt="image" src="https://github.com/user-attachments/assets/2d150a59-25b2-4620-af7d-10f58e7eba67"> <br>
   - As we can see in the above picture there are outliers and using upper limit and lower limit we got to know about the total number of the outliers and each column which was **825, 941, 898, 2324** respectively.
   - Removing all this outliers would not be a good option we could lose so many important information so we though of using log transformation.
-  - 
+  ![alt text](image.png)<br>
+  <br>
+  - The above histogram shows the distribution of data before applying the log transformation.<br>
+  <br>
+  ![alt text](image-1.png)<br>
+  <br>
+  - After applying the log transformation, it ractifies the skewness in data distribution.
+
+  ## Visualization 
+  **1 Numbers of cars by its Make**<br>
+  <br>
+  ![alt text](image-3.png) <br>
+  <br>
+  - Top 5 car selling companies were **Chevrolte**,**Ford**,**Toyota**,**volkswagen**, and **Nissan**.<br>
+  
+  **2 Price by Engine HP** <br>
+  <br>
+  ![alt text](image-4.png)<br>
+  <br>
+  - We can say that the majority of the cars are within 100 to 500 HP.
+  - As the HP increases the price of the car also increases.<br>
+  
+  **3 Heatmap**<br>
+  <br> 
+  ![alt text](image-5.png)<br>
+  <br>
+  - From the above heatmap we can that there is **highly positive correlation between** **highway**, **city mpg** and **number cylinders**.
+  - Moreover, there is **highly negative correlation between highway MPG and City MPG**<br>
+
+  **4 Number of cars sold by year**<br>
+  <br>
+  ![alt text](image-6.png)<br>
+  <br>
+  - From the above picture we can say that the number of cars sold **after 2012** were surprisingly **higher**.<br>
+
+  **5 Pie chart : Driven Wheels**<br>
+  <br>
+  ![alt text](image-7.png)<br>
+  <br>
+  - People have **prefered front wheel drive** over Rear, all,and four wheel drive. <br>
+
+  **I-Pie chart: Style of model**<br>
+  <br>
+  ![alt text](image-8.png)<br>
+  <br>
+  - People have predered **Sedan** and **4dr suv**.<br>
+  <br>
+
+  ## Model Building and Performance
+
+  - We split the data into train and tests sets with a test size of 20%.
+
+  - **Random forest Regression:** We thought of using random forest regression by considering sparcity associated with the data.
+
+  - **Accuracy:** we got the accuracy of 92% on the test data.
+
+## Huge thanks to:
+- **Darshan Ruparel (Team mate) :** https://github.com/DarshanR24, https://www.linkedin.com/in/darshanruparel/ <br>
+
+- **Mohhamed Saiful islam (Professor):** https://github.com/msi-ru-cs , https://www.linkedin.com/in/mohammadsaifulislam/ . <br>
+
+Nisarg Patel © 2024
+
+
+
+
+
+ 
+
+
+  
+     
+
 
 
 
