@@ -58,8 +58,9 @@
   ## Outlier detection and handling
   - We used boxplot to plot the outliers and Engine_hp, highway MPG, city MPG, and MSRP columns.<br>
   <br>
-  <img width="190" alt="image" src="https://github.com/user-attachments/assets/
-  2e077ade-52c1-4acf-93a7-246dec847645"> <img width="190" alt="image" src="https://github.com/user-attachments/assets/2d150a59-25b2-4620-af7d-10f58e7eba67"> <br>
+ <img width="192" alt="image" src="https://github.com/user-attachments/assets/51ffc373-2494-46a7-9a75-ed255eb6bd51"><img width="185" alt="image" src="https://github.com/user-attachments/assets/c8560f54-45bc-4f65-8ef9-eebafe839313">
+
+
   
   - As we can see in the above picture there are outliers and using upper limit and lower limit we got to know about the total number of the outliers and each column which was **825, 941, 898, 2324** respectively.
   - Removing all this outliers would not be a good option we could lose so many important information so we thought of using **log transformation**.<br>
