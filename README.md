@@ -2,7 +2,7 @@
 > **Created by:** Nisarg Patel
 - Implemented diverse visualizations to get the insights from the cars dataset.
 - Cleaned each feature thoroughly to get maximum insights.
-- Created a ML model model to prdict the car price with the accuracy of 92%.
+- Created a ML model model to prdict the car price with the **accuracy** of **92%.**
 
 ## Code and resources used:
 **Pyrhon Vesion :** 3.9 <br>
@@ -10,8 +10,8 @@
 
 ## Dataset
 - The dataset was provided by one of our professor Mohhamed Saiful islam (https://www.linkedin.com/in/mohammadsaifulislam/).
-- The dataset have total 12000 entries.
-- The dataset have 16 diverse features which are mentioned below:
+- The dataset have total **12000 entries.**
+- The dataset have **16 diverse features** which are mentioned below:
   - **Make**
   - **Model**
   - **Year**
@@ -32,14 +32,14 @@
  ## Data cleaning 
 
 <img width="286" alt="Screenshot 2024-07-16 at 11 59 30 AM" src="https://github.com/user-attachments/assets/360d6fef-d31c-45b8-abb4-e37ae4da01c3"> <br>
-- It can be seen from the above picture that the dataset had 5 features which have missing values in it here we handle missing values in each feature seperately.
+- It can be seen from the above picture that the dataset had **5 features** which have missing values in it here we handle missing values in each feature seperately.
 
   **1 Engine_hp**
-  - Here we have used Mode to replace NaN values for each make using their model.
-  - For ex: For FIAT cars we found **Mode** from its model and **replace** all the **NAN values in FIAT car's** with that **MODE** and similarly we did this for each car make (Lincoln, Ford, Honda, Mitsubishi, Nissan, Tesla, Toyota and more,,).
+  - Here we have used **Mode** to replace NaN values for each make using their model.
+  - For ex: For FIAT cars we found **Mode** from its model and **replace** all the **NAN values in FIAT car's** with that **MODE** and similarly we did this for each car make **(Lincoln, Ford, Honda, Mitsubishi, Nissan, Tesla, Toyota and more,,)**.
   
   **2 Engine Fuel type**
-  - We had 3 entries in which we had NAN in Engine Fuel Type column.
+  - We had **3 entries** in which we had NAN in Engine Fuel Type column.
   - All three entries are from **Suzuki** cars and all other Suzuki cars had **regular unleaded fuel type** so here also we decided to go with **MODE** to remove null values.
 
   **3 Engine Cylinders**
@@ -56,18 +56,19 @@
   - We dropped this column for the smooth flow.
 >
   ## Outlier detection and handling
-  - We used boxplot to plot the outliers and Engine_hp, highway MPG, city MPG, and MSRP columns.<br>
+  - We used boxplot to plot the outliers of **Engine_hp, highway MPG, city MPG, and MSRP columns**.<br>
   <br>
  <img width="192" alt="image" src="https://github.com/user-attachments/assets/51ffc373-2494-46a7-9a75-ed255eb6bd51"><img width="185" alt="image" src="https://github.com/user-attachments/assets/c8560f54-45bc-4f65-8ef9-eebafe839313">
 
 
   
-  - As we can see in the above picture there are outliers and using upper limit and lower limit we got to know about the total number of the outliers and each column which was **825, 941, 898, 2324** respectively.
-  - Removing all this outliers would not be a good option we could lose so many important information so we thought of using **log transformation**.<br>
+  - As we can see in the above picture there are outliers and using **upper limit** and **lower limit** we got to know about the total number of the outliers and each column which was **825, 941, 898, 2324** respectively.
+  - Removing all this outliers would not be a good option we could **lose** so many **important information** so we thought of using **log transformation**.<br>
   <br>
- <img width="500" alt="image" src="https://github.com/user-attachments/assets/f5194f9b-35d6-40bc-b52d-9f606db97526">
-<br>
-  - The above histogram shows the distribution of data **before** applying the log transformation.<br>
+ <img width="500" alt="image" src="https://github.com/user-attachments/assets/f5194f9b-35d6-40bc-b52d-9f606db97526"><br>
+
+
+  - The above **histogram** shows the distribution of data **before** applying the log transformation.<br>
   <br>
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/da50fb92-7e46-40db-8ff3-cc0147efc188">
 
@@ -80,20 +81,20 @@
   <br>
   ![alt text](image-3.png) <br>
 
-  - Top 5 car selling companies were **Chevrolte**,**Ford**,**Toyota**,**volkswagen**, and **Nissan**.<br>
+  - **Top 5** car **selling** companies were **Chevrolte**,**Ford**,**Toyota**,**volkswagen**, and **Nissan**.<br>
   
   **2 Price by Engine HP** <br>
   <br>
   ![alt text](image-4.png)<br>
 
-  - We can say that the majority of the cars are within 100 to 500 HP.
-  - As the HP increases the price of the car also increases.<br>
+  - We can say that the **majority** of the cars are within **100** to **500 HP**.
+  - As the **HP increases** the **price** of the car also **increases**.<br>
   
   **3 Heatmap**<br>
   <br> 
   ![alt text](image-5.png)<br>
   
-  - From the above heatmap we can that there is **highly positive correlation between** **highway**, **city mpg** and **number cylinders**.
+  - From the above heatmap we can see that there is **highly positive correlation between** **highway**, **city mpg** and **number cylinders**.
   - Moreover, there is **highly negative correlation between highway MPG and City MPG**<br>
 
   **4 Number of cars sold by year**<br>
@@ -108,7 +109,7 @@
   
   - People have **prefered front wheel drive** over Rear, all,and four wheel drive. <br>
 
-  **I-Pie chart: Style of model**<br>
+  **6 I-Pie chart: Style of model**<br>
   <br>
   ![alt text](image-8.png)<br>
 
@@ -117,7 +118,7 @@
 
   ## Model Building and Performance
 
-  - We split the data into train and tests sets with a test size of 20%.
+  - We split the data into train and tests sets with a **test size** of **20%**.
 
   - **Random forest Regression:** We thought of using random forest regression by considering sparcity associated with the data.
 
@@ -128,7 +129,7 @@
 
 - **Mohhamed Saiful islam (Professor):** https://github.com/msi-ru-cs , https://www.linkedin.com/in/mohammadsaifulislam/ . <br>
 
-Nisarg Patel © 2024
+**Nisarg Patel © 2024**
 
 
 
