@@ -5,7 +5,7 @@
 - Created a ML model model to prdict the car price with the **accuracy** of **92%.**
 
 ## Code and resources used:
-**Pyhon Vesion :** 3.9 <br>
+**Python Vesion :** 3.9 <br>
 **Packages :** pandas, numpy, matplotlib, seaborn, sklearn, plotly <br>
 
 ## Dataset
